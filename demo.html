@@ -1,29 +1,108 @@
 <html>
   <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./dist/css/styles.css">
     <script type="text/javascript" src="./dist/scripts/scripts.min.js"></script>
   </head>
   <body>
-    <h2>Buttons</h2>
-    <h3>Round Buttons</h3>
-    <div class="row">
-      <div class="button round disabled">
-        <p>+</p>
-      </div>
-      <div class="button round disabled minus">
-        <p></p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="button round">
-        <p>+</p>
-      </div>
-      <div class="button round minus">
-        <p></p>
-      </div>
-    </div>
 
-    <h3>Square Buttons</h3>
-    <div class="button"></div>
+    <div class="demo-container">
+      <h2>Buttons</h2>
+
+      <div class="round-buttons">
+
+        <h3>Round Buttons</h3>
+
+        <h4>Default</h4>
+        <div class="row">
+          <div class="button round plus">
+            <p>+</p>
+          </div>
+          <div class="button round minus">
+            <p></p>
+          </div>
+        </div>
+
+        <h4>Disabled</h4>
+        <div class="row">
+          <div class="button round disabled plus">
+            <p>+</p>
+          </div>
+          <div class="button round disabled minus">
+            <p></p>
+          </div>
+        </div>
+
+        <h4>Active</h4>
+        <div class="row">
+          <div class="button round active plus">
+            <p>+</p>
+          </div>
+          <div class="button round active minus">
+            <p></p>
+          </div>
+        </div>
+      </div> <!-- round-buttons end -->
+
+      <div class="square-buttons">
+
+        <h3>Square Buttons</h3>
+
+        <div class="row">
+          <div class="button inactive">
+            <p>inactive</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="button gold normal">
+            <p>normal</p>
+          </div>
+          <div class="button gold hover">
+            <p>hover [web only]</p>
+          </div>
+          <div class="button gold active">
+            <p>click/tap</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="button gold check">
+            <p><i class="fas fa-check"></i></p>
+          </div>
+          <div class="button gold check hover">
+            <p><i class="fas fa-check"></i></p>
+          </div>
+          <div class="button gold check active">
+            <p><i class="fas fa-check"></i></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="button dark normal">
+            <p>normal</p>
+          </div>
+          <div class="button dark hover">
+            <p>hover [web only]</p>
+          </div>
+          <div class="button dark active">
+            <p>click/tap</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="button dark check">
+            <p><i class="fas fa-check"></i></p>
+          </div>
+          <div class="button dark check hover">
+            <p><i class="fas fa-check"></i></p>
+          </div>
+          <div class="button dark check active">
+            <p><i class="fas fa-check"></i></p>
+          </div>
+        </div>
+
+      </div><!-- square-buttons end -->
+    </div><!-- demo-container end -->
   </body>
 </html>

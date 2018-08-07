@@ -1,0 +1,25 @@
+@import 'assets/colors/colors';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  background-color: $dark-grey;
+  color: $geyser-grey;
+  font-family: 'Open Sans', sans-serif;
+
+  .demo-container {
+    width: 80%;
+    margin: auto;
+
+    .row {
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .round-buttons {
+      width: 140px;
+    }
+  }
+
+}

@@ -1,31 +1,106 @@
+@import 'assets/colors/colors';
+
 .button {
-  background-color:blue;
-  height:40px;
-  width:80px;
+  background-color: $gold;
+  height: 40px;
+  width: 240px;
   display: inline-block;
-  margin: 0 10px;
+  margin: 2px;
+  color: $dark-grey;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  p {
+    line-height: 40px;
+    margin: auto;
+  }
 
   &.round {
     background-color: unset;
     border-radius:50%;
-    width:37.5px;
-    height:37.5px;
-    border:4px solid gold;
+    width:32px;
+    height:32px;
+    border: 4px solid $old-gold;
+    color:$old-gold;
+
+    p {
+      color: $old-gold;
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: 600;
+    }
 
     &.disabled {
-      border:4px solid darkgoldenrod;
+      border-color: $old-gold-dark;
 
       p {
-        color: darkgoldenrod;
+        color: $old-gold-dark;
       }
     }
 
-    p {
-      vertical-align: middle;
-      margin: auto;
-      text-align: center;
-      color: gold;
-      font-size: 31px;
+    &.active {
+      border-color: $old-gold;
+      background-color: $old-gold;
+
+      p {
+        color: $dark-grey;
+
+      }
     }
   }
+
+  &.inactive {
+    color: $french-grey;
+    background: $geyser-grey;
+  }
+
+  &.hover {
+    color: $nevada-grey;
+    background: $light-gold;
+  }
+
+  &.active {
+    background-color: $mustard-gold;
+  }
+
+  &.check {
+    i {
+      display: inline-block;
+      margin: 1em 0;
+    }
+  }
+
+  &.dark {
+    border: 3px solid $gold;
+    background-color: $dark-grey;
+    height: 34px;
+    width: 234px;
+    color: $gold;
+
+    p {
+      margin: -2px auto;
+    }
+
+    &.hover {
+      color: $tulip-yelow;
+      background: $shadow-grey;
+    }
+
+    &.active {
+      background-color: $gold;
+      color: $dark-grey;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 }
