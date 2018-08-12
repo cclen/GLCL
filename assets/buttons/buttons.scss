@@ -61,7 +61,7 @@
     background: $light-gold;
   }
 
-  &.active {
+  &.focused {
     background-color: $mustard-gold;
   }
 
@@ -88,7 +88,7 @@
       background: $shadow-grey;
     }
 
-    &.active {
+    &.focused {
       background-color: $gold;
       color: $dark-grey;
     }

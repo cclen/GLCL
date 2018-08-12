@@ -1,0 +1,11 @@
+{
+"buttons": [
+  { "minus" : "-"},
+  { "plus": "+" },
+  { "inactive": "inactive" },
+  { "normal": "normal" },
+  { "hover-web": "hover[web only]" },
+  { "focused-click": "click/tap" },
+  { "check": "<i class='fas fa-check'></i>" }
+]
+}

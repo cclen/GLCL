@@ -60,7 +60,7 @@
   background: #f7db63;
 }
 
-.button.active {
+.button.focused {
   background-color: #c4a72d;
 }
 
@@ -86,7 +86,7 @@
   background: #8f824b;
 }
 
-.button.dark.active {
+.button.dark.focused {
   background-color: #f6d137;
   color: #4a4f53;
 }
@@ -102,7 +102,8 @@ body {
 
 body .demo-container {
   width: 80%;
-  margin: auto;
+  max-width: 800px;
+  margin: 20px auto;
 }
 
 body .demo-container .row {
@@ -112,5 +113,5 @@ body .demo-container .row {
 }
 
 body .demo-container .round-buttons {
-  width: 140px;
+  max-width: 140px;
 }
