@@ -1,14 +1,12 @@
+@import "../main";
+
 .button{
-<<<<<<< class3
-  background-color:unset;
-=======
   background-color: blue;
->>>>>>> master
   height:40px;
   width:80px;
   display: inline-block;
   margin: 10px 10px;
-  p{color: #505253}
+  p {color: #505253}
 
   	&.round{
   	background-color: unset;
@@ -16,11 +14,11 @@
   	width:37.5px;
   	border-radius:50%;
 	border: 4px solid gold;
-	  
-	 
+
+
 	  &.disabled{
-	  	border: 3px solid #F4CC61;
-      opacity: 0.5; 
+	  	border: 3px solid $secondary;
+      opacity: 0.5;
 	  	p {
 	  		opacity: 50%;
 	  	}
@@ -29,14 +27,14 @@
 		  background-color: gold;
 		  p{
 			color: #4C4F53;
-		  } 
+		  }
 	  }
 	  p{
     	vertical-align: middle;
     	margin: auto;
     	text-align: center;
       line-height: 32px;
-    	color: #F4CC61;
+    	color: $secondary;
     	font-size: 40px;
     }
 
@@ -46,8 +44,8 @@
     height: 45px;
     width: 300px;
     border-radius: 50px;
-    border: 3px solid #F4CC61;
-    margin-bottom: 20px; 
+    border: 3px solid $secondary;
+    margin-bottom: 20px;
 
     p {
       vertical-align: middle;
@@ -69,7 +67,7 @@
       padding: 15px;
 
       &.gold-check {
-        color: #F4CC61;
+        color: $secondary;
       }
     }
 
@@ -84,7 +82,7 @@
     }
 
     &.normal {
-      background-color: #F4CC61;
+      background-color: $secondary;
 
     }
 
@@ -99,7 +97,7 @@
     &.hoverLight {
       background-color: #8D7E53;
         p {
-          color: #F4CC61;
+          color: $secondary;
         }
     }
 
@@ -110,7 +108,7 @@
 
     &.dark {
       p {
-        color: #F4CC61;
+        color: $secondary;
       }
     }
 	  }
@@ -134,8 +132,8 @@
 			p{color: #BCBFC7;}
 			}
 			&.gold {
-			background-color: gold;	
-			
+			background-color: gold;
+
 			}
 			&.goldlight {
 				background-color: #F0D77C
@@ -170,7 +168,6 @@
 
 
 
-  
+
 
 }
-
