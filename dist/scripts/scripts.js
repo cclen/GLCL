@@ -45,7 +45,7 @@ var calendar = function calendar() {
   var populateCalendarBody = function populateCalendarBody() {
     var daysInRow = 7;
     var totalRows = 5;
-    var totalDays = daysInRow * totalRows;
+    // var totalDays = daysInRow * totalRows;
     var currentRows = 0;
 
     while (currentRows < totalRows) {
@@ -61,13 +61,41 @@ var calendar = function calendar() {
     }
   };
   populateCalendarBody();
-
-  daysOfTheWeek.length; //7
-  daysOfTheWeek.length; //6
-
 };
 
 document.addEventListener('DOMContentLoaded', calendar, false);
+'use strict';
+
+var calendarHeader = function calendarHeader() {
+  var month = document.getElementById('month');
+  // console.log('month', month);
+
+  var monthSetter = function monthSetter(newMonth) {
+    month.innerHTML = newMonth;
+  };
+  monthSetter('December');
+  var monthArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var leftArrow = document.getElementById('left-arrow');
+  var rightArrow = document.getElementById('right-arrow');
+  var monthIndex = 8;
+
+  leftArrow.addEventListener('click', function () {
+    console.log('left');
+    if (monthIndex > 0) {
+      monthIndex--;
+      monthSetter(monthArr[monthIndex]);
+    }
+  });
+  rightArrow.addEventListener('click', function () {
+    console.log('right');
+    if (monthIndex < monthArr.length - 1) {
+      monthIndex++;
+      monthSetter(monthArr[monthIndex]);
+    }
+  });
+};
+
+document.addEventListener('DOMContentLoaded', calendarHeader, false);
 'use strict';
 
 var list = [];
